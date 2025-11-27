@@ -64,3 +64,10 @@ std::vector<double> getChangeVector(const std::vector<double>& values)
   return changes;
 }
 
+std::vector<double> parseData(const std::string& csv)
+{
+std::vector<double> result;
+std::size_t start = 0;
+
+while (start < csv.size()) {
+std::size_t commaPos = csv.find(',', start);
