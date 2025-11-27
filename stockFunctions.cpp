@@ -63,3 +63,4 @@ std::vector<double> getChangeVector(const std::vector<double>& values)
 
   return changes;
 }
+
