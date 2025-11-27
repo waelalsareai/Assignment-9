@@ -105,3 +105,14 @@ if (drop < maxDrop) {
 maxDrop = drop;
 }
 
+if (current > highestSoFar) {
+highestSoFar = current;
+}
+}
+
+if (maxDrop > 0) {
+return 0.0;
+}
+
+return maxDrop;
+}
