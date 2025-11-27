@@ -71,3 +71,4 @@ std::size_t start = 0;
 
 while (start < csv.size()) {
 std::size_t commaPos = csv.find(',', start);
+
