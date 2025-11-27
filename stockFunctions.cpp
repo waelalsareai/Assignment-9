@@ -82,4 +82,8 @@ start = csv.size();
 }
 
 if (!token.empty()) {
-  result.push_back(std::stod(token());
+  result.push_back(std::stod(token));
+}
+}
+return result;
+}
