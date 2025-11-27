@@ -3,3 +3,9 @@
 #include <sstream>
 using namespace std;
 
+double percentChange(const vector<double>& values, int startDay, int endDay) {
+    double start = values.at(startDay);
+    double end = values.at(endDay);
+    return (end - start) / start * 100.0;
+}
+
