@@ -94,3 +94,13 @@ if (startDay < 0 || endDay >= static_cast<int>(values.size()) || startDay > endD
 return 0.0;
 }
 
+double highestSoFar = values.at(startDay);
+double maxDrop = 0.0;
+
+for (int i = startDay + 1; i <= endDay; i++) {
+double current = values.at(i);
+
+double drop = current - highestSoFar;
+if (drop < maxDrop) {
+maxDrop = drop;
+}
