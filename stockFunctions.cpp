@@ -14,4 +14,10 @@ double highestValue(const std::vector<double>& values, int startDay, int endDay)
     double maxVal = values.at(startDay);
 
     for (int i = startDay + 1; i <= endDay; i++) {
-      
+      if (values.at(i) > maxVal)
+            maxVal = values.at(i);
+    }
+
+    return maxVal;
+}
+
