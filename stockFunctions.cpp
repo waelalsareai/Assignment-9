@@ -77,4 +77,9 @@ if (commaPos == std::string::npos) {
 token = csv.substr(start);
 start = csv.size();
 } else {
-  
+  token = csv.substr(start, commaPos - start);
+  start = commaPos + 1;
+}
+
+if (!token.empty()) {
+  result.push_back(std::stood(token());
