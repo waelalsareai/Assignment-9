@@ -88,3 +88,9 @@ if (!token.empty()) {
 return result;
 }
 
+double maxDrawdown(const std::vector<double>& values, int startDay, int endDay)
+{
+if (startDay < 0 || endDay >= static_cast<int>(values.size()) || startDay > endDay) {
+return 0.0;
+}
+
