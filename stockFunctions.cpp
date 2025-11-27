@@ -47,3 +47,14 @@ double standardDev(const std::vector<double>& values, int startDay, int endDay)
   return std::sqrt(variance);
 }
 
+std::vector<double> getChangeVector(const std::vector<double>& values)
+{
+  std::vector<double> changes(values.size());
+
+  if (values.empty()) {
+    return changes;
+  }
+
+  changes[0] = 0.0;
+
+  for (std::size_t i=1; i < values.size()); ++i)
