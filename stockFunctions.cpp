@@ -57,4 +57,9 @@ std::vector<double> getChangeVector(const std::vector<double>& values)
 
   changes[0] = 0.0;
 
-  for (std::size_t i=1; i < values.size()); ++i)
+  for (std::size_t i=1; i < values.size(); ++i) {
+    changes[i] = values [i] - values[i - 1];
+  }
+
+  return changes;
+}
