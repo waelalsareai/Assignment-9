@@ -74,7 +74,6 @@ std::size_t commaPos = csv.find(',', start);
 
 std::string token;
 if (commaPos == std::string::npos) {
-// last chunk (no more commas)
 token = csv.substr(start);
 start = csv.size();
 } else {
