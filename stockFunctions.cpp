@@ -21,3 +21,12 @@ double highestValue(const std::vector<double>& values, int startDay, int endDay)
     return maxVal;
 }
 
+double average(const std::vector<double>& values, int startDay, int endDay)
+{
+  double sum = 0.0;
+  for (int i = startDay; i <= endDay; i++) {
+    sum += values.at(i);
+  }
+  int count = endDay - startDay + 1;
+  return sum / count;
+}
