@@ -30,3 +30,4 @@ double average(const std::vector<double>& values, int startDay, int endDay)
   int count = endDay - startDay + 1;
   return sum / count;
 }
+
