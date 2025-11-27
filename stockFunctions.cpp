@@ -31,4 +31,6 @@ double average(const std::vector<double>& values, int startDay, int endDay)
   return sum / count;
 }
 
-double standardDev(const std)
+double standardDev(const std::vector<double>& values, int startDay, int endDay)
+{
+  double mean = average(values, startDay, endDay);
