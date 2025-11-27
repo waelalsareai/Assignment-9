@@ -34,3 +34,9 @@ double average(const std::vector<double>& values, int startDay, int endDay)
 double standardDev(const std::vector<double>& values, int startDay, int endDay)
 {
   double mean = average(values, startDay, endDay);
+
+  double sumSqDiff = 0.0;
+
+  for (int i = startDay; i <= endDay; i++) {
+    double diff = values.at(i) - mean;
+    sumSqDiff += diff * diff;
