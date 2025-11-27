@@ -104,3 +104,4 @@ double drop = current - highestSoFar;
 if (drop < maxDrop) {
 maxDrop = drop;
 }
+
